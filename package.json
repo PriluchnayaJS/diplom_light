@@ -28,11 +28,12 @@
         "webpack-dev-server": "^3.9.0"
     },
     "dependencies": {
-        "@babel/polyfill": "^7.7.0",
+        "@babel/polyfill": "^7.12.1",
         "element-closest": "^3.0.2",
         "es6-promise": "^4.2.8",
         "fetch-polyfill": "^0.8.2",
-        "formdata-polyfill": "^3.0.19",
-        "nodelist-foreach-polyfill": "^1.2.0"
+        "formdata-polyfill": "^3.0.20",
+        "nodelist-foreach-polyfill": "^1.2.0",
+        "polyfill-nodelist-foreach": "^1.1.2"
     }
 }
