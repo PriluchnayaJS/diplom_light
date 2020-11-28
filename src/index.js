@@ -9,12 +9,16 @@ elementClosest(window);
 
 
 import toggleMenu from './modules/toggleMenu';
+import sendForms from './modules/sendForms';
+import formsValid from './modules/formsValid';
 
 
 
 
 
-
-
-//модальное окно
+//модальное окно (1)
 toggleMenu();
+//отправка форм (2)
+sendForms();
+//валидация форм (2)
+formsValid();
