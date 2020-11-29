@@ -11,7 +11,7 @@ elementClosest(window);
 import toggleMenu from './modules/toggleMenu';
 import sendForms from './modules/sendForms';
 import formsValid from './modules/formsValid';
-
+import tabs from './modules/tabs';
 
 
 
@@ -22,3 +22,5 @@ toggleMenu();
 sendForms();
 //валидация форм (2)
 formsValid();
+//аккардеон (3)
+tabs();
