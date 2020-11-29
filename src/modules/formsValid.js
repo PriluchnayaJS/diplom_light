@@ -5,6 +5,7 @@ const formsValid = () => {
 
     phones.forEach((e) => {
         e.addEventListener('input', () => {
+
             e.setAttribute('pattern', '[+][0-9]{11}');
             if (!e.value) {
                 e.setAttribute('placeholder', '+7XXXXXXXXXX');
@@ -15,20 +16,19 @@ const formsValid = () => {
 
     });
 
-    const name2 = document.querySelector('#name_2');
-    //console.log(name2);
+    const names = document.querySelectorAll('.user-name');
+    //console.log(names);
+    names.forEach((e) => {
+        e.addEventListener('input', () => {
 
-
-    name2.addEventListener('input', () => {
-
-        name2.setAttribute('pattern', '^[А-Яа-яЁё ]+$');
-        if (!name2.value) {
-            name2.setAttribute('placeholder', 'Ваше имя (RU/space)');
-        } else {
-            name2.setAttribute('placeholder', 'Ваше имя');
-        };
+            e.setAttribute('pattern', '^[А-Яа-яЁё ]+$');
+            if (!e.value) {
+                e.setAttribute('placeholder', 'Ваше имя (RU/space)');
+            } else {
+                e.setAttribute('placeholder', 'Ваше имя');
+            };
+        });
     });
-
 };
 
 export default formsValid;

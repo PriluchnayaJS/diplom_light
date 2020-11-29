@@ -12,7 +12,7 @@ import toggleMenu from './modules/toggleMenu';
 import sendForms from './modules/sendForms';
 import formsValid from './modules/formsValid';
 import tabs from './modules/tabs';
-
+import calcTabs from './modules/calcTabs';
 
 
 
@@ -24,3 +24,5 @@ sendForms();
 formsValid();
 //аккардеон (3)
 tabs();
+//аккардеон калькулятор
+calcTabs();

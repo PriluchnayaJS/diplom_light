@@ -12,7 +12,7 @@ const toggleMenu = () => {
 
     popupCall.addEventListener('click', (event) => {
         let target = event.target;
-
+        event.preventDefault();
         if (target.classList.contains('popup-close')) {
             popupCall.style.display = 'none';
         } else {

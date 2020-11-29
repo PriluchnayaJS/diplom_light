@@ -1,6 +1,6 @@
 const tabs = () => {
     const tabHeader = document.querySelector('.slideInDown'),
-        tab = tabHeader.querySelectorAll('.panel'),
+        //tab = tabHeader.querySelectorAll('.panel'),
         panelНeading = tabHeader.querySelectorAll('.panel-heading'),
         tabContent = tabHeader.querySelectorAll('.panel-collapse');
     // console.log(tabHeader);

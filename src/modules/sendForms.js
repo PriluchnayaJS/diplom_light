@@ -1,7 +1,7 @@
 const sendForms = () => {
 
-    const forms = document.querySelectorAll('div.col-lg-4 > form');
-
+    // const forms = document.querySelectorAll('div.col-lg-4 > form');
+    const forms = document.querySelectorAll('form'); // все формы
     //console.log(forms);
 
     forms.forEach((elem) => {
