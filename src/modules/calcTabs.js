@@ -21,12 +21,13 @@
                 const parent = target.closest('.panel-default');
                 const child = parent.querySelector('.panel-collapse');
                 const nextBlock = parent.nextSibling.nextSibling;
-                const nextBlockChild = nextBlock.querySelector('.panel-collapse');
 
+                if (nextBlock === null) {
+                    return;
+                }
+                const nextBlockChild = nextBlock.querySelector('.panel-collapse');
                 child.classList.remove('in');
                 nextBlockChild.classList.add('in');
-
-
 
             }
         };
