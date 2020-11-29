@@ -13,7 +13,7 @@ import sendForms from './modules/sendForms';
 import formsValid from './modules/formsValid';
 import tabs from './modules/tabs';
 import calcTabs from './modules/calcTabs';
-
+import btnMore from './modules/btnMore';
 
 
 //модальное окно (1)
@@ -26,3 +26,5 @@ formsValid();
 tabs();
 //аккардеон калькулятор
 calcTabs();
+//кнопка "Больше"
+btnMore();

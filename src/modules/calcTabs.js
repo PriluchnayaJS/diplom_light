@@ -29,7 +29,8 @@
                 child.classList.remove('in');
                 nextBlockChild.classList.add('in');
 
-            }
+            };
+
         };
 
         calc.addEventListener('click', toggleBlock);
