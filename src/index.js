@@ -12,9 +12,11 @@ import toggleMenu from './modules/toggleMenu';
 import sendForms from './modules/sendForms';
 import formsValid from './modules/formsValid';
 import tabs from './modules/tabs';
-import calcTabs from './modules/calcTabs';
+import calcTab from './modules/calcTab';
+import calcResult from './modules/calcResult';
 import btnMore from './modules/btnMore';
-
+import checkList from './modules/checkList';
+import popupConsult from './modules/popupConsult';
 
 //модальное окно (1)
 toggleMenu();
@@ -25,6 +27,12 @@ formsValid();
 //аккардеон (3)
 tabs();
 //аккардеон калькулятор
-calcTabs();
+calcTab();
+//калькулятор рассчеты
+calcResult();
 //кнопка "Больше"
 btnMore();
+//окно checkList
+checkList();
+//консультация
+popupConsult();

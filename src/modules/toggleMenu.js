@@ -15,6 +15,7 @@ const toggleMenu = () => {
 
         if (target.classList.contains('popup-close')) {
             popupCall.style.display = 'none';
+            event.preventDefault();
         } else {
             target = target.closest('.popup-dialog');
 
