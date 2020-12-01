@@ -3,7 +3,7 @@ const calcTabs = () => {
     const accordion = document.querySelector('#accordion');
 
     const toggleBlock = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const target = e.target;
 
         if (target.closest('.panel-heading')) {
@@ -11,8 +11,10 @@ const calcTabs = () => {
             const child = parent.querySelector('.panel-collapse');
             document.querySelectorAll('.panel-collapse').forEach((item) => {
                 if (item === child) {
+                    e.preventDefault();
                     child.classList.add('in');
                 } else {
+                    e.preventDefault();
                     item.classList.remove('in');
                 }
             });
@@ -27,18 +29,16 @@ const calcTabs = () => {
                 return;
             }
             const nextBlockChild = nextBlock.querySelector('.panel-collapse');
+            e.preventDefault();
             child.classList.remove('in');
+            e.preventDefault();
             nextBlockChild.classList.add('in');
         };
-        // const chBoxs = document.querySelectorAll('.onoffswitch-checkbox');
-        // // console.log(chBoxs);
 
-        // if (chBoxs[0]) {
-        //     chBoxs[0].addEventListener('change', chBoxs[0].checked = false);
-        // };
     };
 
     accordion.addEventListener('click', toggleBlock);
+
 };
 
 export default calcTabs;
