@@ -161,14 +161,14 @@
                                     <div class="title-text">первый колодец (приемный)</div>
                                     <div class="select-box">
                                         <p><strong>Диаметр</strong></p>
-                                        <select class="form-control expand diam">
+                                        <select class="form-control expand diam d1">
                                         <option>1.4 метра</option>
                                         <option>2 метра</option>
                                     </select>
                                     </div>
                                     <div class="select-box">
                                         <p><strong>Количество колец</strong></p>
-                                        <select class="form-control expand diamCount">
+                                        <select class="form-control expand diamCount dc1">
                                         <option>1 штука</option>
                                         <option>2 штуки</option>
                                         <option>3 штуки</option>
@@ -178,14 +178,14 @@
                                         <div class="title-text">второй колодец (дренажный)</div>
                                         <div class="select-box">
                                             <p><strong>Диаметр</strong></p>
-                                            <select class="form-control expand diam">
+                                            <select class="form-control expand diam d2">
                                         <option>1.4 метра</option>
                                         <option>2 метра</option>
                                     </select>
                                         </div>
                                         <div class="select-box">
                                             <p><strong>Количество колец</strong></p>
-                                            <select class="form-control expand diamCount">
+                                            <select class="form-control expand diamCount dc2">
                                         <option>1 штука</option>
                                         <option>2 штуки</option>
                                         <option>3 штуки</option>
@@ -233,7 +233,7 @@
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="panel-body">
                                     <p>Введите расстояние до дома</p>
-                                    <input type="text">
+                                    <input type="text" class="distHouse">
                                     <button class="button construct-btn call-btn">Получить расчет и скидку</button>
                                 </div>
                             </div>
@@ -456,6 +456,7 @@
                     <input class="user-name" type="text" id="name_1" name="user_name" placeholder="Ваше имя" required>
                     <label for="phone_1">Ваш телефон для получения скидки</label>
                     <input class="phone-user" type="text" id="phone_1" name="user_phone" placeholder="+7(___)___-__-__" required>
+                    <input name="data_form" type="hidden" />
                     <button class="button capture-form-btn" name="submit" type="submit">Получить расчет и скидку</button>
                     <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще 7 параметров</p>
                 </form>
@@ -510,6 +511,7 @@
                     <input class="user-name" type="text" id="name_13" name="user_name" placeholder="Ваше имя" required>
                     <label for="phone_13">Ваш телефон для получения скидки</label>
                     <input class="phone-user" type="text" id="phone_13" name="user_phone" placeholder="+7(___)___-__-__" required>
+                    <input name="user_quest" type="hidden" />
                     <button class="button capture-form-btn" name="submit" type="submit">Получить консультацию</button>
                     <p class="small">Вы получите расчет стоимости с учетом выбора <br>подходящего объема септика. типа грунта, <br> расположения объектов на участке, уровня грунтовых <br> вод, типа фундамента дома и еще 7 параметров</p>
                 </form>

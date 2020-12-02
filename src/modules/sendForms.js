@@ -10,6 +10,13 @@ const sendForms = () => {
             successMessage = 'отправлено';
 
         elem.addEventListener('submit', (event) => {
+            
+            // Не отправляем данные из формы с вопросом
+            if (elem.matches('.director-form')) {
+                event.preventDefault();
+                return;
+            }
+
             const statusMessage = document.createElement('div');
             statusMessage.style.cssText = 'font-size: 1.8rem; color: #ffa500;';
 
@@ -47,7 +54,6 @@ const sendForms = () => {
 
     //запрос на сервер в отдельной функции postData()
     const postData = (body) => {
-
         return fetch('./server.php', {
             method: 'POST',
             headers: {
@@ -56,9 +62,7 @@ const sendForms = () => {
             body: JSON.stringify(body),
             credentials: 'include',
             cache: 'default'
-
         });
-
     };
 };
 
