@@ -10,7 +10,7 @@ const sendForms = () => {
             successMessage = 'отправлено';
 
         elem.addEventListener('submit', (event) => {
-            
+
             // Не отправляем данные из формы с вопросом
             if (elem.matches('.director-form')) {
                 event.preventDefault();
@@ -37,7 +37,7 @@ const sendForms = () => {
                     if (response.status !== 200) {
                         throw new Error('status network not 200');
                     };
-                    console.log(response);
+                    // console.log(response);
                     elem.reset();
                     statusMessage.textContent = successMessage;
                     setTimeout(() => statusMessage.remove(), 3000);
@@ -46,7 +46,7 @@ const sendForms = () => {
                     statusMessage.textContent = errorMessage;
                     setTimeout(() => statusMessage.remove(), 3000);
 
-                    console.error(error);
+                    //console.error(error);
                 });
         });
 
