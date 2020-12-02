@@ -1,14 +1,14 @@
+const data = {
+    type: true,
+    diam: 0,
+    diamCount: 0,
+    bottom: false,
+    arrDiam: [],
+    arrDiamCount: [],
+    distHouse: 0,
+    calcResult: 0
+};
 const calcResult = () => {
-    const data = {
-        type: true,
-        diam: 0,
-        diamCount: 0,
-        bottom: false,
-        arrDiam: [],
-        arrDiamCount: [],
-        distHouse: 0,
-        calcResult: 0
-    };
 
     const calc = data => {
 
@@ -145,7 +145,9 @@ const calcResult = () => {
         calc(data);
         console.log(data);
     });
+
     calc(data);
 
 };
+export { data };
 export default calcResult;

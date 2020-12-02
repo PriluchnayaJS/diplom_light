@@ -1,3 +1,4 @@
+import { data } from './calcResult';
 const toggleMenu = () => {
 
     const callBtns = document.querySelectorAll('.call-btn'),
@@ -9,12 +10,13 @@ const toggleMenu = () => {
             popupCall.style.display = 'block';
 
             // При открытии окна переносим  объект data в скрытый инпут в окне
-            const questionInput = document.querySelector('.director-form input[name="user_quest"]');
+            const calcRes = document.getElementById('calc-result');
             const inputData = popupCall.querySelector('[name="data_form"]');
-            if (questionInput && inputInPopup) {
-                inputInPopup.value = questionInput.value;
-            }
-
+            // console.log(inputData);
+            if (data) {
+                inputData.value = JSON.stringify(data);
+            };
+            calcRes.value = '';
 
         });
     });
