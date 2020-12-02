@@ -18,6 +18,9 @@ const toggleMenu = () => {
             };
             calcRes.value = '';
 
+            data.diam = 0;
+            data.diamCount = 0;
+
         });
     });
 

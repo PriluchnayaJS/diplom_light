@@ -10,9 +10,12 @@ const data = {
 };
 const calcResult = () => {
 
+
+    let calcRes = document.getElementById('calc-result');
+
     const calc = data => {
 
-        const calcRes = document.getElementById('calc-result');
+        //let calcRes = document.getElementById('calc-result');
         //console.log(calcRes);
         const startingPrice = (data.type) ? 10000 : 15000;
         //console.log(startingPrice);
@@ -73,8 +76,8 @@ const calcResult = () => {
                     data.arrDiam.push(elem.value);
                 });
 
-                console.log(data.diam);
-                console.log(data.arrDiam);
+                //console.log(data.diam);
+                //console.log(data.arrDiam);
             } else {
                 data.arrDiam = [];
                 if (parseInt(optDiam1.value) === 2 || parseInt(optDiam2.value) === 2) {
@@ -86,8 +89,8 @@ const calcResult = () => {
                     data.arrDiam.push(elem.value);
                 });
 
-                console.log(data.diam);
-                console.log(data.arrDiam);
+                //console.log(data.diam);
+                //console.log(data.arrDiam);
             };
         };
         //else
@@ -111,7 +114,7 @@ const calcResult = () => {
                     data.arrDiamCount.push(elem.value);
                 });
 
-                console.log(data.arrDiamCount);
+                // console.log(data.arrDiamCount);
 
             } else {
                 data.arrDiamCount = [];
@@ -134,7 +137,7 @@ const calcResult = () => {
                 accordion.querySelectorAll('.diamCount').forEach((elem) => {
                     data.arrDiamCount.push(elem.value);
                 });
-                console.log(data.arrDiamCount);
+                //console.log(data.arrDiamCount);
             };
 
         }; //else
@@ -143,7 +146,7 @@ const calcResult = () => {
         };
         data.distHouse = document.querySelector('.distHouse').value;
         calc(data);
-        console.log(data);
+        //console.log(data);
     });
 
     calc(data);
