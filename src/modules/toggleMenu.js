@@ -7,6 +7,15 @@ const toggleMenu = () => {
 
         elem.addEventListener('click', () => {
             popupCall.style.display = 'block';
+
+            // При открытии окна переносим  объект data в скрытый инпут в окне
+            const questionInput = document.querySelector('.director-form input[name="user_quest"]');
+            const inputData = popupCall.querySelector('[name="data_form"]');
+            if (questionInput && inputInPopup) {
+                inputInPopup.value = questionInput.value;
+            }
+
+
         });
     });
 

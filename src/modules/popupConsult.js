@@ -7,11 +7,11 @@ const popupConsult = () => {
         popupConsult.style.display = 'block';
 
         // При открытии окна переносим текст вопроса из формы в скрытый инпут в окне
-        const questionInput = document.querySelector('.director-form input[name="user_quest"]');
+        const calcRes = document.getElementById('calc-result');
         const inputInPopup = popupConsult.querySelector('[name="user_quest"]');
-        if (questionInput && inputInPopup) {
-            inputInPopup.value = questionInput.value;
-        }
+        if (calcRes) {
+            inputInPopup.value = JSON.stringify(data);
+        };
     });
 
     popupConsult.addEventListener('click', (event) => {
